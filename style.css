@@ -10,7 +10,8 @@
   --color3: #EAD196;
   --color4: #F3EDC8;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -19,7 +20,9 @@ a {
   outline: none;
   color: unset;
 }
-
+.title{
+  text-transform: uppercase;
+}
 .conrainer {
   width: 100%;
   height: 100%;
@@ -292,6 +295,7 @@ header .circles {
 .skills .title {
   font-size: 4rem;
   color: var(--color2);
+  margin: 50px 0;
 }
 
 .skills .skills-container {
@@ -340,50 +344,60 @@ header .circles {
 .skills .portfolio-btn {
   margin: 30px 0;
 }
+
 /* portfolio */
-.portfolio{
+.portfolio {
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.portfolio .title{
+
+.portfolio .title {
   font-size: 4rem;
   color: var(--color2);
+  margin: 50px 0;
 }
-.portfolio .portfolio-container{
+
+.portfolio .portfolio-container {
   width: 75%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px 20px;
 }
-.portfolio .portfolio-container .portfolio-card{
+
+.portfolio .portfolio-container .portfolio-card {
   border-radius: 10px;
   overflow: hidden;
   /* border: 1px solid black; */
   background-color: var(--color3);
 }
-.portfolio .portfolio-container .portfolio-card img{
+
+.portfolio .portfolio-container .portfolio-card img {
   width: 100%;
 }
-.portfolio .portfolio-container .portfolio-card .portfolio-card-content{
+
+.portfolio .portfolio-container .portfolio-card .portfolio-card-content {
   padding: 20px;
   color: var(--color2);
 }
-.portfolio .portfolio-container .portfolio-card .portfolio-card-content h3{
+
+.portfolio .portfolio-container .portfolio-card .portfolio-card-content h3 {
   text-transform: uppercase;
   margin: 0 0 10px 0;
   font-weight: 800;
 }
-.portfolio .portfolio-container .portfolio-card .portfolio-card-content p{
+
+.portfolio .portfolio-container .portfolio-card .portfolio-card-content p {
   text-transform: capitalize;
   margin: 0 0 25px 0;
   letter-spacing: 1px;
   line-height: 1.2;
   font-weight: 550;
 }
-.portfolio .portfolio-container .portfolio-card .portfolio-card-content a{
+
+.portfolio .portfolio-container .portfolio-card .portfolio-card-content a {
   /* text-decoration: underline; */
   text-transform: capitalize;
   font-weight: 600;
@@ -393,7 +407,96 @@ header .circles {
   border-radius: 10px;
   transition: .5s;
 }
-.portfolio .portfolio-container .portfolio-card .portfolio-card-content a:hover{
+
+.portfolio .portfolio-container .portfolio-card .portfolio-card-content a:hover {
   background-color: var(--color1);
   /* color: var(--color4); */
+}
+
+.portfolio .btn {
+  margin: 40px 0;
+}
+
+/* contact us */
+.contact-us {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/img/contact-us-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-us .title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.3rem;
+  color: var(--color3);
+  margin: 50px 0;
+}
+
+.contact-us .contact-content {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.contact-us .contact-content .contact-form {
+  margin: auto;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}
+
+.contact-us .contact-content .contact-form input[type="text"],
+.contact-us .contact-content .contact-form input[type="email"],
+.contact-us .contact-content .contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 18px;
+  color: #6c6a6a;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-us .contact-content .contact-form textarea {
+  min-height: 350px;
+  resize: none;
+}
+
+.contact-submit {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--color3);
+  color: var(--color2);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-weight: 600;
+}
+.contact-submit:hover{
+  background-color: var(--color4);
+}
+.contact-us .contact-content .contact-img img {
+  margin: auto;
+  width: 400px;
+}
+
+footer{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color2);
+}
+footer a{
+  font-weight: 700;
+  color: var(--color1);
+  text-transform: uppercase;
 }
